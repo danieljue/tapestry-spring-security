@@ -16,9 +16,9 @@
  */
 package nu.localhost.tapestry5.springsecurity.services.internal;
 
-import java.lang.reflect.Method;
 import java.util.Collection;
 import java.util.List;
+
 import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.access.SecurityMetadataSource;
 

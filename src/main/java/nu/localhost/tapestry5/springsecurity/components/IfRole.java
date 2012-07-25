@@ -26,7 +26,7 @@ import org.apache.tapestry5.Block;
 import org.apache.tapestry5.annotations.Parameter;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.GrantedAuthorityImpl;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.util.StringUtils;
 
@@ -121,7 +121,7 @@ public class IfRole {
             role = StringUtils.replace(role, "\n", "");
             role = StringUtils.replace(role, "\f", "");
 
-            requiredAuthorities.add(new GrantedAuthorityImpl(role));
+            requiredAuthorities.add(new SimpleGrantedAuthority(role));
         }
 
         return requiredAuthorities;

@@ -14,8 +14,6 @@
 
 package nu.localhost.tapestry5.springsecurity.services.internal;
 
-import java.lang.reflect.Modifier;
-
 import org.apache.tapestry5.MarkupWriter;
 import org.apache.tapestry5.plastic.MethodDescription;
 import org.apache.tapestry5.plastic.PlasticUtils;
@@ -23,7 +21,6 @@ import org.apache.tapestry5.runtime.Component;
 import org.apache.tapestry5.runtime.ComponentEvent;
 import org.apache.tapestry5.runtime.Event;
 import org.apache.tapestry5.runtime.PageLifecycleListener;
-//import org.apache.tapestry5.services.TransformMethodSignature;
 import org.apache.tapestry5.services.transform.ComponentClassTransformWorker2;
 
 /**

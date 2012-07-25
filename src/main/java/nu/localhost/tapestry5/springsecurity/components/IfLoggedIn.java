@@ -49,7 +49,7 @@ public class IfLoggedIn {
     
     private boolean test() {
         Principal principal = requestGlobals.getHTTPServletRequest().getUserPrincipal();
-        return principal != null && principal.getName() != "";
+        return principal != null && !principal.getName().equals("");
     }
 
     /**

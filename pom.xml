@@ -4,9 +4,9 @@
 	<groupId>com.github.danieljue</groupId>
 	<artifactId>tapestry-spring-security</artifactId>
 	<packaging>jar</packaging>
-	<version>3.0.5</version>
+	<version>5.4-SNAPSHOT</version>
 	<name>Spring Security services for Tapestry</name>
-	<description>Spring Security services for Tapestry 5.4-Snapshot</description>
+	<description>Spring Security services for Tapestry 5.4-SNAPSHOT, based on http://www.localhost.nu/java/tapestry-spring-security</description>
 	<inceptionYear>2007</inceptionYear>
 	<url>http://www.localhost.nu/java/tapestry-spring-security</url>
 
@@ -23,11 +23,12 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:https://github.com/lobbin/tapestry-spring-security.git</connection>
-		<url>https://github.com/lobbin/tapestry-spring-security</url>
+		<connection>scm:git:https://github.com/danieljue/tapestry-spring-security.git</connection>
+		<url>https://github.com/danieljue/tapestry-spring-security</url>
 	</scm>
 
 	<developers>
+	
 		<developer>
 			<id>lobbin</id>
 			<name>Robin Helgelin</name>
@@ -52,6 +53,15 @@
 				<role>Developer</role>
 			</roles>
 		</developer>
+			<developer>
+			<id>danieljue</id>
+			<name>Daniel Jue</name>
+			<email>djue@phy6.net</email>
+			<roles>
+				<role>Forker</role>
+			</roles>
+			<timezone>EST</timezone>
+		</developer>
 	</developers>
 
 	<dependencies>
@@ -75,16 +85,13 @@
 			<artifactId>spring-security-core</artifactId>
 			<version>${spring-security-version}</version>
 		</dependency>
-		<!--dependency> <groupId>org.springframework.security</groupId> <artifactId>spring-security-core-tiger</artifactId> 
-			<version>${spring-security-version}</version> </dependency -->
+
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
 			<version>${spring-security-version}</version>
 		</dependency>
 		<!-- Springframework -->
-		<!--dependency> <groupId>org.springframework</groupId> <artifactId>spring-full</artifactId> 
-			<version>${spring-release-version}</version> </dependency -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
@@ -188,8 +195,8 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
+					<source>1.6</source>
+					<target>1.6</target>
 					<optimize>true</optimize>
 				</configuration>
 			</plugin>
