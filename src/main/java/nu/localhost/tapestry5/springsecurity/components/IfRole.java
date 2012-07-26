@@ -88,7 +88,8 @@ public class IfRole {
             return Collections.emptyList();
         }
 
-        Collection<GrantedAuthority> granted = (Collection<GrantedAuthority>) currentUser.getAuthorities();
+        @SuppressWarnings("unchecked")
+		Collection<GrantedAuthority> granted = (Collection<GrantedAuthority>) currentUser.getAuthorities();
         return granted;
     }
 
